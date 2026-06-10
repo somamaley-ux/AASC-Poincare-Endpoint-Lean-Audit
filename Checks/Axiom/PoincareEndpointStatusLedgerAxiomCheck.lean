@@ -1,0 +1,29 @@
+import MaleyLean.Papers.Poincare.StatusLedger
+
+open MaleyLean.Papers.Poincare
+
+/-!
+# Poincare endpoint status ledger axiom surface
+-/
+
+#print axioms PoincareEndpointStatusObligation
+#print axioms PoincareEndpointStatusObligations
+#print axioms PoincareEndpointStatusObligations_length_eq
+#print axioms PoincareEndpointStatusObligationTitlesPopulatedBool_eq_true
+#print axioms PoincareEndpointStatus
+#print axioms PoincareEndpointStatusRow
+#print axioms PoincareEndpointStatusLedger
+#print axioms PoincareEndpointStatusLedger_obligations_match
+#print axioms PoincareEndpointStatusLedgerAllSuppliedBool_eq_true
+#print axioms PoincareEndpointStatusLedgerLeanAnchorsPopulatedBool_eq_true
+#print axioms PoincareEndpointStatusLedgerSourceEvidencePopulatedBool_eq_true
+#print axioms PoincareEndpointStatusLedgerClosedCount_eq
+#print axioms PoincareEndpointStatusLedgerBridgeBoundaryCount_eq
+#print axioms PoincareEndpointStatusLedgerExternalStandingCount_eq
+#print axioms PCEndpointClosurePercent_eq
+#print axioms PCRicciBridgeComparisonBoundaryPercent_eq
+#print axioms PoincareReferenceArchiveMaturityPercent_eq
+#print axioms PoincareEndpointCurrentFormalizationStatusSummaryPopulatedBool_eq_true
+#print axioms PoincareEndpointCurrentProgressSummaryPopulatedBool_eq_true
+#print axioms PoincareEndpointFormalizationStatusDocumentPopulatedBool_eq_true
+#print axioms PoincareEndpointStatusLedgerComplete_holds

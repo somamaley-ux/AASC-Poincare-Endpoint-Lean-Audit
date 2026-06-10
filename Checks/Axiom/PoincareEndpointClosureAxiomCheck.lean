@@ -1,0 +1,66 @@
+import MaleyLean.Papers.Poincare.EndpointClosure
+
+open MaleyLean.Papers.Poincare.EndpointClosure
+
+/-!
+# Poincare endpoint closure axiom surface
+
+The Poincare module is currently an audit spine.  These checks make sure the routed
+Poincare endpoint closeout has no live project axioms.
+-/
+
+#print axioms PCCarrier
+#print axioms OfficialPCEndpoint
+#print axioms PCNeg
+#print axioms StdPCNeg
+#print axioms SphereBridgeImgExclPC
+#print axioms SphereBridgeSeparatorBranchPC
+#print axioms PCNegEndpointOccupation
+#print axioms PCEndpointStatus
+#print axioms PCEndpointStatusOccupation
+#print axioms PCGovernedEndpointUse
+#print axioms PCNegativeGovernedEndpointUse
+#print axioms PCFoundationalCandidate
+#print axioms PCEndpointAuditHypotheses
+#print axioms pcNeg_iff_standardNegative
+#print axioms pcStandardNegative_iff_sphereBridgeImageExclusion
+#print axioms pcNeg_iff_sphereBridgeImageExclusion
+#print axioms pcSphereBridgeImageExclusion_iff_separatorBranch
+#print axioms pcNeg_iff_sphereBridgeSeparatorBranch
+#print axioms pcNegOccupation_exhaustion
+#print axioms pcNegativeOccupation_nonoptional
+#print axioms pcEndpointResolvingNonGovernance_hiddenFifthCase_impossible
+#print axioms pcGovernedEndpointUse_bivalent
+#print axioms pcNegativeGovernedEndpointUse_has_separatorStatus
+#print axioms pcSphereBridgeSeparatorBranch_of_negativeGovernedEndpointUse
+#print axioms pcSphereBridgeSeparatorBranch_theoremLevelDiscriminator
+#print axioms pcOfficialNegativeResolution_endpointStatusGovernance
+#print axioms pcEndpointResolvingNegativeTheorem_is_endpointStatusGovernance
+#print axioms pcFoundationalCandidate_classifier_iff
+#print axioms pcNoIndependentSphereDiscriminator_of_foundationalNoClassifier
+#print axioms PCEndpointAASCContext
+#print axioms pcEndpointAuditHypotheses_of_foundationalNoClassifier
+#print axioms pcNeg_endpointGovernance
+#print axioms pcNeg_independentSphereDiscriminator
+#print axioms pcNeg_impossible
+#print axioms sphereRead_forced
+#print axioms pcEndpoint_officialCorrespondence
+#print axioms officialPCEndpoint_of_auditHypotheses
+#print axioms officialPCEndpoint_of_foundationalNoClassifier
+#print axioms officialPCEndpoint_of_aascContext
+#print axioms pcEndpointAASCContext_closes_endpoint
+#print axioms PCRicciFlowStanding
+#print axioms PCSurgeryStanding
+#print axioms PCClassicalTopologyStanding
+#print axioms PCRicciBridgeStandingPacket
+#print axioms PCRicciBridgeStanding
+#print axioms pcRicciBridgeStanding_of_packet
+#print axioms pcRicciBridgeStandingPacket_components
+#print axioms PCRicciBridgeComparisonContext
+#print axioms PCRicciBridgeComparisonContext.bridgeStanding
+#print axioms pcRicciBridgeAudit_correspondence
+#print axioms ricciBridgeAudit_of_context
+#print axioms ricciBridgeAudit_bridgeStanding
+#print axioms ricciBridgeAudit_sphereRead
+#print axioms ricciBridgeAudit_context_iff
+#print axioms pcRicciBridge_remains_comparisonOnly

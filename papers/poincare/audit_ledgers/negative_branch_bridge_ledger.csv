@@ -1,0 +1,12 @@
+node,local object,function,refutation burden
+Endpoint target,PCEndpointUnderAudit,Fixes official universal Poincare endpoint without assuming pointwise sphere-readout,Show target fixation already asserts SphereRead(M)
+Pointwise use,OfficialPCEndpointUse(M),Places arbitrary fixed carrier under theorem-bearing endpoint audit,Show a universal theorem instance is not pointwise endpoint use
+Carrier,C_PC(M),Fixes M standing packet S3 and homeomorphism relation,Produce standard Poincare data outside the carrier
+Kernel adequacy,EndpointAdeq_PC,Target determinacy plus step evaluability plus act-time finality plus same-regime fidelity,Preserve endpoint use while denying one adequacy condition
+Native negative branch,PCNeg(M),Standard counterexample branch Stand_PC(M) and not SphereRead(M),Produce a counterexample not expressible in native form
+Bridge exclusion,SphereBridgeImgExcl_PC(M),Bridge-facing form of native negative branch,Show native negative form is not bridge-image exclusion
+Negative resolution,OfficialPCNegativeResolution(M),Theorem-bearing use of PCNeg as official negative endpoint resolution,Show endpoint-bearing PCNeg is not official negative resolution
+Governance,EndpointGov_PC(M),Classifies official negative use as endpoint-status governance,Inhabit endpoint-resolving non-governance
+Independent discriminator,IndependentSphereDisc_PC(M),Endpoint governance that is not positive bridge completion,Show it is proof support carrier shift bookkeeping or bridge completion
+Exclusion,not IndependentSphereDisc_PC(M),No second same-domain endpoint authority under K_PC,Show independent endpoint authority compatible with K_PC
+Closure,not PCNeg(M),Native negative branch excluded,Show contradiction chain has a broken link

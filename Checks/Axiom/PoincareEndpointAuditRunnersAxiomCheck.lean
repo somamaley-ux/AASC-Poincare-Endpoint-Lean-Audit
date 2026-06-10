@@ -1,0 +1,25 @@
+import MaleyLean.Papers.Poincare.AuditRunners
+
+open MaleyLean.Papers.Poincare
+
+/-!
+# Poincare endpoint audit runner registry axiom surface
+-/
+
+#print axioms PoincareEndpointFocusedAuditRunnerFiles
+#print axioms PoincareEndpointAggregateAuditRunnerFiles
+#print axioms PoincareEndpointAuditRunnerFiles
+#print axioms PoincareEndpointFocusedAuditRunnerFiles_count_eq
+#print axioms PoincareEndpointAggregateAuditRunnerFiles_count_eq
+#print axioms PoincareEndpointAuditRunnerFiles_count_eq
+#print axioms PoincareEndpointAuditRunnerFiles_decomposes
+#print axioms PoincareEndpointFocusedAuditRunnerFilesDuplicateFreeBool_eq_true
+#print axioms PoincareEndpointAggregateAuditRunnerFilesDuplicateFreeBool_eq_true
+#print axioms PoincareEndpointAuditRunnerFilesDuplicateFreeBool_eq_true
+#print axioms PoincareEndpointFocusedAuditRunnerFilesPopulatedBool_eq_true
+#print axioms PoincareEndpointAuditRunnerFilesPopulatedBool_eq_true
+#print axioms PoincareEndpointAuditRunnerFormalizationStatusSummary
+#print axioms PoincareEndpointAuditRunnerProgressSummary
+#print axioms PoincareEndpointAuditRunnerFormalizationStatusSummaryPopulatedBool_eq_true
+#print axioms PoincareEndpointAuditRunnerProgressSummaryPopulatedBool_eq_true
+#print axioms PoincareEndpointAuditRunnerRegistryComplete_holds

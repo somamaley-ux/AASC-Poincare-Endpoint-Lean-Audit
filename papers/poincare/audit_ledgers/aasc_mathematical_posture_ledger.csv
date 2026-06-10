@@ -1,0 +1,9 @@
+Node,Status,Manuscript location,Audit role
+AASC mathematical-status lock,Installed,Front matter after keywords,States AASC is mathematical constraint formalism not philosophical overlay
+Manuscript proof boundary,Installed,Front matter and conclusion,States manuscript theorem chain is the proof
+Lean support boundary,Installed,Front matter and support appendix,States Lean is audit/support not replacement proof
+Paper-specific Lean formalization scope,Installed,Support appendix,Scopes the paper-specific formalization to the stable manuscript and includes the relevant AASC machinery directly
+AASC formal support surface,Installed,Front matter and support appendix,Records existing corpus support and direct inclusion scope for the paper-specific Lean formalization
+Non-explosiveness theorem,Installed,Section 9,Clarifies negative mathematics is not globally forbidden
+No-independent-discriminator scope,Installed,Section 10,Distinguishes forbidden independent endpoint governance from lawful negative results
+Hostile-referee posture,Installed,Hostile-referee audit,Adds wrong-mode/right-mode boundaries for AASC mathematical status and Lean support

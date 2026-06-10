@@ -1,0 +1,26 @@
+import MaleyLean.Papers.Poincare.TruthBoundary
+
+open MaleyLean.Papers.Poincare
+
+/-!
+# Poincare truth-boundary ledger axiom surface
+-/
+
+#print axioms PoincareTruthBoundaryKind
+#print axioms PoincareTruthBoundaryItem
+#print axioms PoincareTruthBoundaryRow
+#print axioms PoincareTruthBoundaryRows
+#print axioms PoincareTruthBoundaryRows_count_eq
+#print axioms PoincareTruthBoundaryItemCatalog_count_eq
+#print axioms PoincareTruthBoundaryItems_match_catalog
+#print axioms PoincareTruthBoundaryItemTitlesPopulatedBool_eq_true
+#print axioms PoincareTruthBoundaryAllDeclaredBool_eq_true
+#print axioms PoincareTruthBoundaryLeanAnchorsPopulatedBool_eq_true
+#print axioms PoincareTruthBoundaryTextsPopulatedBool_eq_true
+#print axioms PoincareTruthBoundaryLeanClosedCount_eq
+#print axioms PoincareTruthBoundaryExternalStandingCount_eq
+#print axioms PoincareTruthBoundaryStructuralBoundaryCount_eq
+#print axioms PoincareTruthBoundarySnapshotCount_eq
+#print axioms PoincareTruthBoundaryMetadataComplete_holds
+#print axioms PoincareTruthBoundaryCountComplete_holds
+#print axioms PoincareTruthBoundaryLedgerComplete_holds
