@@ -1,10 +1,18 @@
 # Poincare Audit Handoff
 
+Repository:
+https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit
+
+Release:
+https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit/releases/tag/v1.0.0
+
 Current status:
 
 - `PCEndpointClosure=100%`
 - `PCRicciBridgeComparisonBoundary=100%`
 - `PoincareReferenceArchiveMaturityComparable=100%`
+- local audit passed
+- GitHub Actions audit passed
 
 The closed endpoint route is:
 
@@ -52,3 +60,9 @@ Manuscript snapshot:
 - `papers/poincare/poincare_aasc_final_publication.pdf`
 - `papers/poincare/main.tex`
 - `formalization_map/Poincare_EndpointClosure_PreLeanMap.lean`
+
+Release zip SHA256:
+
+```text
+8A35B31370F6A14964B439B37F5561DBBD0687240651B63234EF214EB68994DB
+```

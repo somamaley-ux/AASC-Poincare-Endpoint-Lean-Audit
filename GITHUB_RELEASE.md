@@ -1,8 +1,12 @@
-# Suggested GitHub Release
+# GitHub Release v1.0.0
 
-## Release Title Template
+## Release Title
 
-AASC Poincare Endpoint Lean Audit vX.Y.Z
+AASC Poincare Endpoint Lean Audit v1.0.0
+
+## Release URL
+
+https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit/releases/tag/v1.0.0
 
 ## Release Notes
 
@@ -47,3 +51,15 @@ Pinned environment:
 
 - Lean toolchain: `leanprover/lean4:v4.28.0`
 - mathlib revision: `8f9d9cff6bd728b17a24e163c9402775d9e6a365`
+
+Release assets:
+
+- `AASC-Poincare-Endpoint-Lean-Audit-19f556c.zip`
+- `AASC-Poincare-Endpoint-Lean-Audit-19f556c.manifest.txt`
+- `AASC-Poincare-Endpoint-Lean-Audit-19f556c.zip.sha256`
+
+Release zip SHA256:
+
+```text
+8A35B31370F6A14964B439B37F5561DBBD0687240651B63234EF214EB68994DB
+```
