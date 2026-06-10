@@ -4,13 +4,17 @@ Repository:
 https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit
 
 Release:
-https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit/releases/tag/v1.0.1
+https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit/releases/tag/v1.0.2
+
+DOI:
+https://doi.org/10.5281/zenodo.20620926
 
 Current status:
 
 - `PCEndpointClosure=100%`
 - `PCRicciBridgeComparisonBoundary=100%`
 - `PoincareReferenceArchiveMaturityComparable=100%`
+- weakening-resistance clarification integrated
 - local audit passed
 - GitHub Actions audit passed
 
@@ -23,6 +27,7 @@ OfficialPCEndpointUse(M)
   -> ThmSphereDiscPC(M)
   -> EndpointGovPC(M)
   -> IndependentSphereDiscPC(M)
+  -> blocked by weakening-resistant K5/K6/K11/K13 same-carrier audit
   -> contradiction
   -> SphereRead(M)
   -> OfficialPCEndpoint
@@ -42,6 +47,7 @@ Key Lean anchors:
 - `pcOfficialNegativeResolution_endpointStatusGovernance`
 - `pcNeg_independentSphereDiscriminator`
 - `pcNoIndependentSphereDiscriminator_of_foundationalNoClassifier`
+- `pcNoStrictSameCarrierWeakeningPermitsIndependentNegativeGovernance`
 - `pcNeg_impossible`
 - `sphereRead_forced`
 - `officialPCEndpoint_of_aascContext`

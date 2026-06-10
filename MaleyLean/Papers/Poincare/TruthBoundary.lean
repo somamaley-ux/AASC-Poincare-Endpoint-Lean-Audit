@@ -37,6 +37,7 @@ inductive PoincareTruthBoundaryItem where
   | roleCompressionArchitecture
   | pcEndpointRoute
   | aascClassifierExclusion
+  | weakeningResistance
   | refinedComparisonFactorStanding
   | ricciBridgeGuardExact
   | manuscriptPdfSnapshot
@@ -51,6 +52,8 @@ def PoincareTruthBoundaryItem.title : PoincareTruthBoundaryItem -> String
       "sphere endpoint route is closed in the AASC proof spine"
   | .aascClassifierExclusion =>
       "Independent same-domain classifier exclusion is supplied by AASC"
+  | .weakeningResistance =>
+      "Weakening-resistance patch records the K5/K6/K11/K13 same-carrier hardening"
   | .refinedComparisonFactorStanding =>
       "Ricci bridge comparison factors are an explicit bridge/factor-standing boundary"
   | .ricciBridgeGuardExact =>
@@ -63,6 +66,7 @@ def PoincareTruthBoundaryItemCatalog : List PoincareTruthBoundaryItem :=
   , .roleCompressionArchitecture
   , .pcEndpointRoute
   , .aascClassifierExclusion
+  , .weakeningResistance
   , .refinedComparisonFactorStanding
   , .ricciBridgeGuardExact
   , .manuscriptPdfSnapshot ]
@@ -102,6 +106,11 @@ def PoincareTruthBoundaryRows : List PoincareTruthBoundaryRow :=
       kind := .leanClosedProofSpine
       leanAnchor := "pcNoIndependentSphereDiscriminator_of_foundationalNoClassifier"
       truthBoundary := "Poincare sphere discriminator exclusion is routed through the shared AASC same-domain classifier closure"
+      declared := true }
+  , { item := .weakeningResistance
+      kind := .leanClosedProofSpine
+      leanAnchor := "pcNoStrictSameCarrierWeakeningPermitsIndependentNegativeGovernance"
+      truthBoundary := "strict same-carrier weakening is audited as endpoint-equivalent, support-level, carrier-shifting, lawful coequal-targeted, or second-governing"
       declared := true }
   , { item := .refinedComparisonFactorStanding
       kind := .structuralRoleCompressionBoundary
@@ -161,11 +170,11 @@ def PoincareTruthBoundarySnapshotCount : Nat :=
       row.kind == PoincareTruthBoundaryKind.manuscriptSnapshotBoundary)).length
 
 theorem PoincareTruthBoundaryRows_count_eq :
-    PoincareTruthBoundaryRows.length = 7 := by
+    PoincareTruthBoundaryRows.length = 8 := by
   rfl
 
 theorem PoincareTruthBoundaryItemCatalog_count_eq :
-    PoincareTruthBoundaryItemCatalog.length = 7 := by
+    PoincareTruthBoundaryItemCatalog.length = 8 := by
   rfl
 
 theorem PoincareTruthBoundaryItems_match_catalog :
@@ -190,7 +199,7 @@ theorem PoincareTruthBoundaryTextsPopulatedBool_eq_true :
   rfl
 
 theorem PoincareTruthBoundaryLeanClosedCount_eq :
-    PoincareTruthBoundaryLeanClosedCount = 3 := by
+    PoincareTruthBoundaryLeanClosedCount = 4 := by
   rfl
 
 theorem PoincareTruthBoundaryExternalStandingCount_eq :
@@ -206,8 +215,8 @@ theorem PoincareTruthBoundarySnapshotCount_eq :
   rfl
 
 def PoincareTruthBoundaryMetadataComplete : Prop :=
-  PoincareTruthBoundaryRows.length = 7 /\
-  PoincareTruthBoundaryItemCatalog.length = 7 /\
+  PoincareTruthBoundaryRows.length = 8 /\
+  PoincareTruthBoundaryItemCatalog.length = 8 /\
   PoincareTruthBoundaryItems = PoincareTruthBoundaryItemCatalog /\
   PoincareTruthBoundaryItemTitlesPopulatedBool = true /\
   PoincareTruthBoundaryAllDeclaredBool = true /\
@@ -215,7 +224,7 @@ def PoincareTruthBoundaryMetadataComplete : Prop :=
   PoincareTruthBoundaryTextsPopulatedBool = true
 
 def PoincareTruthBoundaryCountComplete : Prop :=
-  PoincareTruthBoundaryLeanClosedCount = 3 /\
+  PoincareTruthBoundaryLeanClosedCount = 4 /\
   PoincareTruthBoundaryExternalStandingCount = 0 /\
   PoincareTruthBoundaryStructuralBoundaryCount = 2 /\
   PoincareTruthBoundarySnapshotCount = 1

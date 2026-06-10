@@ -9,6 +9,7 @@ This package contains the manuscript source for a mathematical AASC constraint-f
 - Bibliography snapshot: `papers/poincare/references.bib`
 - Lean endpoint audit spine: `MaleyLean/Papers/Poincare/EndpointClosure.lean`
 - Focused audit runner: `scripts/check-poincare-endpoint-audit.ps1`
+- Public Lean audit DOI: `https://doi.org/10.5281/zenodo.20620926`
 
 ## Proof-spine posture
 
@@ -23,6 +24,14 @@ EndpointGov_PC(M) -> IndependentSphereDisc_PC(M)
 IndependentSphereDisc_PC(M) -> contradiction
 therefore not PCNeg(M), hence M homeomorphic to S^3 under the fixed Poincare endpoint target.
 ```
+
+The clarification patch adds a weakening-resistance audit for K5, K6, K11, and
+K13: a critic must exhibit a strict same-carrier weakening that preserves
+target-slot fixation, minimal report evaluability, standing-admissibility
+discipline, and carrier fidelity while still permitting endpoint-resolving
+negative governance that is not support, bookkeeping, carrier shift, bridge
+completion, lawful coequal target role, or second endpoint authority.  The
+manuscript and Lean-facing audit record that no such weakening survives.
 
 ## Lean boundary
 

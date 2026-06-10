@@ -17,9 +17,11 @@ Poincare endpoint in the proof-spine class:
 4. theorem-level endpoint-status governance;
 5. independent same-domain sphere discrimination;
 6. AASC no-independent-classifier exclusion;
-7. impossibility of `PCNeg`;
-8. pointwise `SphereRead`;
-9. official endpoint correspondence.
+7. weakening-resistance of K5, K6, K11, and K13 against strict same-carrier
+   weakenings;
+8. impossibility of `PCNeg`;
+9. pointwise `SphereRead`;
+10. official endpoint correspondence.
 
 The Ricci-flow/Hamilton-Perelman route is represented only as comparison
 standing through `PCRicciBridgeStandingPacket` and `RicciBridgeAudit`.
@@ -41,6 +43,7 @@ standing through `PCRicciBridgeStandingPacket` and `RicciBridgeAudit`.
 - `pcOfficialNegativeResolution_endpointStatusGovernance`
 - `pcNeg_independentSphereDiscriminator`
 - `pcNoIndependentSphereDiscriminator_of_foundationalNoClassifier`
+- `pcNoStrictSameCarrierWeakeningPermitsIndependentNegativeGovernance`
 - `pcNeg_impossible`
 - `sphereRead_forced`
 - `officialPCEndpoint_of_aascContext`

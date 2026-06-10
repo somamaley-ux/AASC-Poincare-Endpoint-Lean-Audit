@@ -6,7 +6,10 @@ Public repository:
 https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit
 
 Current release:
-https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit/releases/tag/v1.0.1
+https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit/releases/tag/v1.0.2
+
+Archival DOI:
+https://doi.org/10.5281/zenodo.20620926
 
 This repository separates the Poincare endpoint audit surface from the broader
 AASC working checkout.  It contains the reusable AASC foundation layer, the
@@ -26,6 +29,12 @@ no-independent-classifier closure excludes such a discriminator.  Therefore
 `PCNeg` is impossible and `SphereRead` is forced pointwise, yielding
 `OfficialPCEndpoint`.
 
+The clarification patch also records weakening resistance for the local kernel
+packet: a strict same-carrier weakening of K5, K6, K11, or K13 cannot preserve
+non-degenerate endpoint use while permitting independent negative endpoint
+governance.  Such a weakening is endpoint-equivalent, support-level,
+carrier-shifting, lawful coequal-targeted, or second-governing.
+
 The Hamilton-Perelman/Ricci-flow route is not proof machinery here.  It is
 tracked only as a comparison bridge through `PCRicciBridgeStandingPacket` and
 `RicciBridgeAudit`.
@@ -42,7 +51,7 @@ Current local audit status:
 - `PCEndpointClosure=100%`
 - `PCRicciBridgeComparisonBoundary=100%`
 - `PoincareReferenceArchiveMaturityComparable=100%`
-- GitHub Actions audit passed for release `v1.0.1`
+- GitHub Actions audit passed for release `v1.0.2`
 - no live project-level `axiom`, `sorry`, `admit`, or `unsafe` declaration in
   the active Poincare audit surface
 - pre-Lean manuscript signature map parses outside the active proof surface
@@ -57,6 +66,7 @@ Current local audit status:
 - `pcOfficialNegativeResolution_endpointStatusGovernance`
 - `pcNeg_independentSphereDiscriminator`
 - `pcNoIndependentSphereDiscriminator_of_foundationalNoClassifier`
+- `pcNoStrictSameCarrierWeakeningPermitsIndependentNegativeGovernance`
 - `pcNeg_impossible`
 - `sphereRead_forced`
 - `officialPCEndpoint_of_aascContext`

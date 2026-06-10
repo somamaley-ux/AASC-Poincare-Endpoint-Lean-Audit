@@ -1,16 +1,18 @@
-# GitHub Release v1.0.1
+# GitHub Release v1.0.2
 
 ## Release Title
 
-AASC Poincare Endpoint Lean Audit v1.0.1
+AASC Poincare Endpoint Lean Audit v1.0.2
 
 ## Release URL
 
-https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit/releases/tag/v1.0.1
+https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit/releases/tag/v1.0.2
 
 ## Release Notes
 
 Standalone Lean 4 archive for the AASC-first Poincare endpoint proof spine.
+
+DOI: https://doi.org/10.5281/zenodo.20620926
 
 This release verifies the manuscript-facing AASC route to `OfficialPCEndpoint`
 in a dedicated repository separated from the broader AASC working checkout.
@@ -20,6 +22,12 @@ official negative endpoint use induces theorem-level endpoint-status
 governance; governance induces an independent same-domain sphere discriminator;
 and the reusable AASC no-independent-classifier closure excludes such a
 discriminator.  The pointwise endpoint `SphereRead` is therefore forced.
+
+This patch release integrates the clarification that a strict same-carrier
+weakening of K5, K6, K11, or K13 cannot preserve non-degenerate Poincare
+endpoint use while permitting independent negative endpoint governance.  The
+new Lean-facing audit anchor is
+`pcNoStrictSameCarrierWeakeningPermitsIndependentNegativeGovernance`.
 
 Verification passed:
 
@@ -33,6 +41,7 @@ Audit status:
 - `PCEndpointClosure=100%`
 - `PCRicciBridgeComparisonBoundary=100%`
 - `PoincareReferenceArchiveMaturityComparable=100%`
+- weakening-resistance audit anchor included
 - no live project-level `axiom`, `sorry`, `admit`, or `unsafe` declaration in
   the active Poincare audit surface
 - pre-Lean manuscript signature map parses outside the audited proof surface

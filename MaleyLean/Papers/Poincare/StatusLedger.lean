@@ -1,4 +1,4 @@
-import MaleyLean.Papers.Poincare.EndpointClosure
+import MaleyLean.Papers.Poincare.WeakeningResistance
 
 /-!
 # Poincare endpoint status ledger
@@ -23,6 +23,7 @@ inductive PoincareEndpointStatusObligation where
   | negativeOccupationExhaustion
   | theoremLevelGovernance
   | independentSphereDiscriminatorExclusion
+  | weakeningResistance
   | sphereEndpointClosure
   | ricciBridgeGuardExact
   | ricciBridgeComparisonBoundary
@@ -40,6 +41,8 @@ def PoincareEndpointStatusObligationTitle :
       "Theorem-level sphere exclusion is endpoint-status governance"
   | .independentSphereDiscriminatorExclusion =>
       "Independent same-domain sphere discriminators are excluded through AASC classifier closure"
+  | .weakeningResistance =>
+      "Strict same-carrier weakening cannot preserve endpoint use while permitting independent negative governance"
   | .sphereEndpointClosure =>
       "Pointwise sphere equality and the official sphere endpoint are forced"
   | .ricciBridgeGuardExact =>
@@ -53,12 +56,13 @@ def PoincareEndpointStatusObligations : List PoincareEndpointStatusObligation :=
   , .negativeOccupationExhaustion
   , .theoremLevelGovernance
   , .independentSphereDiscriminatorExclusion
+  , .weakeningResistance
   , .sphereEndpointClosure
   , .ricciBridgeGuardExact
   , .ricciBridgeComparisonBoundary ]
 
 theorem PoincareEndpointStatusObligations_length_eq :
-    PoincareEndpointStatusObligations.length = 8 := by
+    PoincareEndpointStatusObligations.length = 9 := by
   rfl
 
 def PoincareEndpointStatusObligationTitles : List String :=
@@ -114,6 +118,11 @@ def PoincareEndpointStatusLedger : List PoincareEndpointStatusRow :=
       status := .closedInLeanAuditSpine
       leanAnchor := "pcNoIndependentSphereDiscriminator_of_foundationalNoClassifier"
       sourceEvidence := "Poincare sphere discriminator mapped into the shared AASC foundational-candidate classifier exclusion"
+      suppliedInLean := true }
+  , { obligation := .weakeningResistance
+      status := .closedInLeanAuditSpine
+      leanAnchor := "pcNoStrictSameCarrierWeakeningPermitsIndependentNegativeGovernance"
+      sourceEvidence := "weakening-resistance clarification patch audits K5, K6, K11, and K13 against strict same-carrier weakenings"
       suppliedInLean := true }
   , { obligation := .sphereEndpointClosure
       status := .closedInLeanAuditSpine
@@ -175,7 +184,7 @@ def PCRicciBridgeComparisonBoundaryPercent : Nat := 100
 def PoincareReferenceArchiveMaturityPercent : Nat := 100
 
 def PoincareEndpointCurrentFormalizationStatusSummary : String :=
-  "Poincare sphere endpoint closed in Lean audit spine; Ricci bridge comparison recorded as explicit bridge/factor-standing boundary"
+  "Poincare sphere endpoint closed in Lean audit spine; weakening-resistance clarification recorded; Ricci bridge comparison recorded as explicit bridge/factor-standing boundary"
 
 def PoincareEndpointCurrentProgressSummary : String :=
   "PCEndpointClosure=100%; PCRicciBridgeComparisonBoundary=100%; PoincareReferenceArchiveMaturityComparable=100%"
@@ -215,7 +224,7 @@ theorem PoincareEndpointStatusLedgerSourceEvidencePopulatedBool_eq_true :
   rfl
 
 theorem PoincareEndpointStatusLedgerClosedCount_eq :
-    PoincareEndpointStatusLedgerClosedCount = 7 := by
+    PoincareEndpointStatusLedgerClosedCount = 8 := by
   rfl
 
 theorem PoincareEndpointStatusLedgerBridgeBoundaryCount_eq :
@@ -253,14 +262,14 @@ theorem PoincareEndpointFormalizationStatusDocumentPopulatedBool_eq_true :
   rfl
 
 def PoincareEndpointStatusLedgerComplete : Prop :=
-  PoincareEndpointStatusObligations.length = 8 /\
+  PoincareEndpointStatusObligations.length = 9 /\
   PoincareEndpointStatusLedgerObligations =
     PoincareEndpointStatusObligations /\
   PoincareEndpointStatusObligationTitlesPopulatedBool = true /\
   PoincareEndpointStatusLedgerAllSuppliedBool = true /\
   PoincareEndpointStatusLedgerLeanAnchorsPopulatedBool = true /\
   PoincareEndpointStatusLedgerSourceEvidencePopulatedBool = true /\
-  PoincareEndpointStatusLedgerClosedCount = 7 /\
+  PoincareEndpointStatusLedgerClosedCount = 8 /\
   PoincareEndpointStatusLedgerBridgeBoundaryCount = 1 /\
   PoincareEndpointStatusLedgerExternalStandingCount = 0 /\
   PCEndpointClosurePercent = 100 /\
