@@ -6,7 +6,7 @@ Public repository:
 https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit
 
 Current release:
-https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit/releases/tag/v1.0.0
+https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit/releases/tag/v1.0.1
 
 This repository separates the Poincare endpoint audit surface from the broader
 AASC working checkout.  It contains the reusable AASC foundation layer, the
@@ -42,7 +42,7 @@ Current local audit status:
 - `PCEndpointClosure=100%`
 - `PCRicciBridgeComparisonBoundary=100%`
 - `PoincareReferenceArchiveMaturityComparable=100%`
-- GitHub Actions audit passed for release `v1.0.0`
+- GitHub Actions audit passed for release `v1.0.1`
 - no live project-level `axiom`, `sorry`, `admit`, or `unsafe` declaration in
   the active Poincare audit surface
 - pre-Lean manuscript signature map parses outside the active proof surface

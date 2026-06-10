@@ -4,7 +4,7 @@ Repository:
 https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit
 
 Release:
-https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit/releases/tag/v1.0.0
+https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit/releases/tag/v1.0.1
 
 Current status:
 
@@ -61,8 +61,4 @@ Manuscript snapshot:
 - `papers/poincare/main.tex`
 - `formalization_map/Poincare_EndpointClosure_PreLeanMap.lean`
 
-Release zip SHA256:
-
-```text
-8A35B31370F6A14964B439B37F5561DBBD0687240651B63234EF214EB68994DB
-```
+The attached `.sha256` file in the current GitHub release records the archive checksum.

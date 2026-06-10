@@ -1,9 +1,9 @@
-# AASC Poincare Endpoint Lean Audit v1.0.0
+# AASC Poincare Endpoint Lean Audit v1.0.1
 
 Standalone Lean 4 archive for the AASC-first Poincare endpoint proof spine.
 
 Release:
-https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit/releases/tag/v1.0.0
+https://github.com/somamaley-ux/AASC-Poincare-Endpoint-Lean-Audit/releases/tag/v1.0.1
 
 This release verifies the manuscript-facing AASC route to `OfficialPCEndpoint`.
 The native negative branch `PCNeg` is routed through standard negative form,
@@ -31,11 +31,7 @@ Audit status:
   where classical case analysis is used
 - Ricci flow is comparison boundary only, not proof machinery
 
-Release zip SHA256:
-
-```text
-8A35B31370F6A14964B439B37F5561DBBD0687240651B63234EF214EB68994DB
-```
+The attached `.sha256` file records the release archive checksum.
 
 Truth boundary:
 
