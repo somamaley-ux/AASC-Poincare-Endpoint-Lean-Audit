@@ -50,7 +50,9 @@ standing through `PCRicciBridgeStandingPacket` and `RicciBridgeAudit`.
 
 ## Boundary
 
-This is not a first-principles formalization of 3-manifold topology or Ricci
-flow.  The topology is carried by semantic audit predicates; the verified Lean
-surface is the AASC endpoint routing, status-governance exclusion, and
+This is an AASC endpoint-structure Lean audit archive, not a first-principles
+formalization of 3-manifold topology, homeomorphism, Ricci flow, surgery, or
+classical classification.  The topology is carried by semantic audit
+predicates; the verified Lean surface is the AASC endpoint routing,
+status-governance exclusion, reusable no-independent-classifier closure, and
 truth-boundary audit.

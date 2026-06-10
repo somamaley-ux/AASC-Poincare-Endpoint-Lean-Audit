@@ -45,7 +45,7 @@ def PoincareEndpointStatusObligationTitle :
   | .ricciBridgeGuardExact =>
       "Refined Poincare comparison endpoint is equivalent to the explicit comparison-standing context"
   | .ricciBridgeComparisonBoundary =>
-      "Refined Poincare comparison is an explicit bridge/factor-standing boundary, not an Ricci-flow-construction gap"
+      "Refined Poincare comparison is an explicit bridge/factor-standing boundary, not a Ricci-flow-construction gap"
 
 def PoincareEndpointStatusObligations : List PoincareEndpointStatusObligation :=
   [ .fixedCarrierEndpointUse

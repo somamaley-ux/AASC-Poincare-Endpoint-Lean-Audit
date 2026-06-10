@@ -8,10 +8,10 @@ This audit records the final proof posture used by the manuscript.
 |---|---|
 | AASC mathematical status | AASC is the mathematical constraint formalism of the proof, not philosophical commentary or optional vocabulary. |
 | Manuscript proof status | The proof is the theorem chain in the manuscript. |
-| Lean role | Lean is support/audit material for routing, kernel discipline, and formalization scope; it is not a replacement proof. |
-| AASC machinery | Existing corpus formalization support records current provenance for the relevant AASC machinery; the stable paper-specific Lean formalization will incorporate that machinery directly. |
-| Poincare formalization scope | The paper-specific Lean formalization is scoped to the stable manuscript and will include the relevant AASC machinery directly. |
+| Lean role | Lean is support/audit material for routing, kernel discipline, endpoint-status closure, truth-boundary bookkeeping, and formalization scope; it is not a replacement for the manuscript proof or a first-principles topology development. |
+| AASC machinery | The standalone archive includes the reusable AASC foundation layer used by the Poincare route, including the Minimal Conditions / A+ and non-degenerate kernel support. |
+| Poincare formalization scope | The paper-specific Lean formalization is scoped to the stable manuscript endpoint route: `PCNeg`, sphere-bridge image exclusion, endpoint-status governance, independent sphere discriminator exclusion, and `OfficialPCEndpoint`. |
 
 ## Refutation posture
 
-A same-mode objection must attack a mathematical definition, theorem link, dependency claim, carrier instantiation, endpoint-governance inference, or support correspondence. Merely saying that AASC is unfamiliar, nonclassical, or not Ricci flow is wrong-mode. Merely saying that Lean is not the proof is also wrong-mode, because the manuscript does not claim that it is.
+A same-mode objection must attack a mathematical definition, theorem link, dependency claim, carrier instantiation, endpoint-governance inference, truth-boundary declaration, or support correspondence. Merely saying that AASC is unfamiliar, nonclassical, or not Ricci flow is wrong-mode. Merely saying that Lean is not a full topology library is also wrong-mode, because the archive claims an AASC endpoint-structure audit spine rather than a conventional first-principles formalization of Ricci flow or 3-manifold topology.

@@ -4,11 +4,11 @@ This package contains the manuscript source for a mathematical AASC constraint-f
 
 ## Primary deliverables
 
-- Main PDF: `manuscript/poincare_aasc_final_publication.pdf`
-- Main LaTeX source: `manuscript/poincare_aasc_final_publication.tex`
-- Build script: `build/build_pdf.sh`
-- Render QA: `qa/render_final_publication/`
-- Contact sheet: `qa/render_contact_sheet_final_publication.jpg`
+- Main PDF snapshot: `papers/poincare/poincare_aasc_final_publication.pdf`
+- Main LaTeX source snapshot: `papers/poincare/main.tex`
+- Bibliography snapshot: `papers/poincare/references.bib`
+- Lean endpoint audit spine: `MaleyLean/Papers/Poincare/EndpointClosure.lean`
+- Focused audit runner: `scripts/check-poincare-endpoint-audit.ps1`
 
 ## Proof-spine posture
 
@@ -26,7 +26,7 @@ therefore not PCNeg(M), hence M homeomorphic to S^3 under the fixed Poincare end
 
 ## Lean boundary
 
-Lean 4 material in this package is support and audit material for theorem routing, kernel discipline, proof-spine bookkeeping, and the paper-specific formalization scope. It does not replace the manuscript proof. Existing corpus formalization support records current provenance for the relevant AASC machinery, and the stable paper-specific Lean formalization will incorporate that machinery directly.
+Lean 4 material in this archive is support and audit material for theorem routing, kernel discipline, proof-spine bookkeeping, and the paper-specific endpoint formalization scope. It does not replace the manuscript proof or claim a first-principles formalization of 3-manifold topology, homeomorphism, Ricci flow, surgery, or classical classification. The archive includes the reusable AASC foundation layer used by the Poincare route together with the Poincare endpoint audit spine, status ledger, truth-boundary ledger, and focused axiom checks.
 
 A challenge to Lean support must identify a mismatch between support material and the manuscript theorem chain. A challenge to the proof must target a theorem link in the manuscript proof spine.
 
@@ -36,4 +36,4 @@ Perelman/Ricci-flow sources remain comparison-only and do not enter the AASC pro
 
 ## QA notes
 
-The manuscript was rebuilt with a clean multi-pass LaTeX workflow. The final PDF was rendered to PNG pages using the PDF-skill renderer and visually checked via the contact sheet in `qa/`.
+The manuscript snapshot was imported from the final Poincare package. The repository-level audit was verified locally and in GitHub Actions through `scripts/check-poincare-endpoint-audit.ps1`.
