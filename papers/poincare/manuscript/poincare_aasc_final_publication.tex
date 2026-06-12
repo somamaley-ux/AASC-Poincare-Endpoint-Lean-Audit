@@ -30,6 +30,8 @@
 \setlength{\LTpost}{6pt}
 \setlength{\parskip}{0.35em}
 \setlength{\parindent}{0pt}
+\emergencystretch=3em
+\hbadness=10000
 \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
 \newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
 
@@ -66,6 +68,12 @@
 \newcommand{\IndependentSphereDisc}{\mathrm{IndependentSphereDisc}_{PC}}
 \newcommand{\BridgeSlotPC}{B^{\mathrm{slot}}_{PC}}
 \newcommand{\BridgeCompPC}{B^{\mathrm{comp}}_{PC}}
+\newcommand{\BridgeObjPC}{B^{PC}}
+\newcommand{\BridgeObjCompPC}{B^{PC,\mathrm{comp}}}
+\newcommand{\SphereBridgeImgExclLoc}{\mathrm{SphereBridgeImgExcl}^{\mathrm{loc}}_{PC}}
+\newcommand{\LocalCountercasePC}{\mathrm{LocalCountercase}_{PC}}
+\newcommand{\EndpointCounterforcePC}{\mathrm{EndpointCounterforce}_{PC}}
+\newcommand{\ReductioCountercasePC}{\mathrm{ReductioCountercase}_{PC}}
 \newcommand{\Homeo}{\cong_{\mathrm{homeo}}}
 \newcommand{\Diffeo}{\cong_{\mathrm{diff}}}
 \newcommand{\Disc}{\mathrm{Disc}}
@@ -143,6 +151,20 @@ Consequently, a same-mode objection must break one of the mathematical links in 
 \textbf{No one-step retyping.} The proof does not say ``true non-spherehood supplies an admissible discriminator.'' The native negative branch first appears as standard counterexample normal form. It becomes endpoint-status governance only if it is used as the official negative resolution of the fixed pointwise endpoint. This is the central safeguard against collapsing the native negative branch into its own discriminator.
 \end{mdframed}
 
+\begin{mdframed}[backgroundcolor=gray!8,linewidth=0.6pt]
+\textbf{Local exact-complement route.} The global negative-resolution route remains the route audit for official endpoint-defeating use. The endpoint closeout can also be run locally. Under fixed \(\StandPC(M)\), the local assumption \([M\not\Homeo\Sthree]_i\), equivalently \([\neg\SphereRead(M)]_i\), is opened as the live exact-complement countercase against sphere-readout. It is not promoted to global official negative endpoint resolution. It receives only local endpoint-countercase standing inside the subproof, so the induced contradiction discharges the local non-spherehood assumption itself.
+\[
+\begin{aligned}
+[\neg\SphereRead(M)]_i
+&\Rightarrow \LocalCountercasePC(M)
+ \Rightarrow \EndpointCounterforcePC(M),\\
+&\Rightarrow \SphereBridgeImgExclLoc(M)
+ \Rightarrow \IndependentSphereDisc(M)
+ \Rightarrow \bot.
+\end{aligned}
+\]
+\end{mdframed}
+
 \subsection*{Dependency inversion exclusion}
 The dependency order is not
 \[
@@ -191,6 +213,8 @@ No hidden fifth case & Inhabit endpoint-resolving, fixed-carrier, non-governing 
 Endpoint governance implies independent discriminator & Show endpoint-resolving negative governance that is positive bridge completion, proof support only, carrier shift, bookkeeping, or otherwise not second endpoint authority.\\
 No independent sphere discriminator & Show an independent same-domain sphere-status discriminator compatible with the endpoint-forced kernel.\\
 Strict weakening of the local kernel packet & Exhibit a weaker same-carrier regime that preserves target-slot fixation, minimal report evaluability, standing--admissibility discipline, and carrier fidelity while permitting endpoint-resolving negative governance that is not support, bookkeeping, carrier shift, bridge completion, coequal target role, or second endpoint authority.\\
+Sphere-bridge object & Show that a clause of \(\BridgeObjPC(M)\) smuggles \(\SphereRead(M)\), changes carrier, or fails to preserve the official Poincare endpoint interface.\\
+Local exact-complement discharge & Show that the local annotation is an added object-level premise or that the contradiction discharges only a strengthened premise rather than \([\neg\SphereRead(M)]_i\).\\
 Official endpoint correspondence & Show that excluding \(\PCNeg(M)\) under the fixed standing packet does not yield \(M\Homeo\Sthree\).\\
 AASC mathematical status & Show a precise failure of a definition, theorem, inference, dependency claim, or formal constraint; not merely that AASC is unfamiliar or nonclassical.\\
 Lean support boundary & Show a mismatch between Lean-facing support and a manuscript claim, if Lean support is invoked; not merely that Lean is not the proof.\\
@@ -220,7 +244,7 @@ The live proof does not depend on resemblance to Ricci flow, surgery, or customa
 \subsection{Claim-class lock}
 The manuscript claims:
 \begin{quote}
-Within the AASC endpoint proof class, the Poincare endpoint is closed by showing that official negative use of the native counterexample branch induces endpoint-status governance, that such governance induces an independent same-domain sphere discriminator, and that the fixed-carrier kernel excludes independent same-domain endpoint discrimination. Therefore the native negative branch is impossible and the ordinary sphere-readout endpoint follows.
+AASC proves the Poincare endpoint by showing that official negative use of the native counterexample branch induces endpoint-status governance, that such governance induces an independent same-domain sphere discriminator, and that the fixed-carrier kernel excludes independent same-domain endpoint discrimination. Therefore the native negative branch is impossible and the ordinary sphere-readout endpoint follows.
 \end{quote}
 It does not claim a new Ricci-flow proof, a new surgery theorem, a new recognition algorithm, an imported corollary of Perelman, or a proof that a topological truth must first present itself as an independently named invariant. It also does not claim that negative statements are forbidden. A negative claim may be proof support, bookkeeping, local evidence, a lawful obstruction inside a bridge route, or a carrier-changing report. What is excluded is a same-carrier theorem-bearing negative endpoint resolution that governs the fixed endpoint without occupying the positive sphere bridge. Lean 4 support is not offered as a replacement proof of this manuscript; it remains an audit-support boundary for the already-mathematical AASC machinery and formal routing, now recorded in the public Poincare Lean audit archive.
 
@@ -591,6 +615,56 @@ By definition \(\StandPC(M)\) is the conjunction of closedness, connectedness, d
 For a fixed carrier \(M\), \(\BridgeSlotPC(M)\) is the declared transition position from \(\StandPC(M)\) to \(\SphereRead(M)\) on the same carrier. The slot fixes the typed transition. It does not assert spherehood.
 \end{definition}
 
+\begin{definition}[Poincare sphere-bridge object]\label{def:pc-bridge-object}
+For a fixed pointwise Poincare carrier, \(\BridgeObjPC(M)\) is the sphere-bridge object recording a lawful bridge from \(\StandPC(M)\) to \(\SphereRead(M)\). It consists of the following preservation and report-discipline clauses.
+\begin{enumerate}[label=\textup{(B\arabic*)}]
+\item \textbf{Same-manifold preservation.} The bridge preserves the same manifold \(M\), not a surgery product, flow-stage object, model manifold, decomposition piece, triangulation artifact, cover, completion, or auxiliary carrier unless a lawful carrier bridge returns to \(M\).
+\item \textbf{Carrier preservation.} The bridge preserves closedness, connectedness, dimension three, the homeomorphism relation, and the fixed topological carrier \(\CarrierPC(M)\).
+\item \textbf{Standing preservation.} The bridge preserves the same standing packet
+\[
+\ClosedThree(M)\wedge\Conn(M)\wedge\dim M=3\wedge\pi_1(M)=0.
+\]
+\item \textbf{Readout preservation.} The bridge preserves the declared readout slot
+\[
+\SphereRead(M)\Longleftrightarrow M\Homeo\Sthree.
+\]
+It does not replace sphere-readout by homology, curvature, Ricci-flow extinction, triangulation normal form, recognition output, or category-specific surrogate unless that surrogate is bridged back to \(\SphereRead(M)\).
+\item \textbf{Category preservation.} Smooth, PL, and topological presentations are allowed as bridge or support material only when they preserve the same topological endpoint carrier and do not create a separate endpoint branch.
+\item \textbf{UEAP report preservation.} The bridge does not report standing as readout, proof support as bridge completion, auxiliary geometric data as topological endpoint readout, or non-spherehood as endpoint defeat without the corresponding bridge or endpoint-use role.
+\item \textbf{ATS anchor/tensor/skin preservation.} The bridge preserves the anchor data \((M,\Homeo,\StandPC,\SphereRead)\), treats sphere-readout and bridge occupation as tensor content, and prevents notation, triangulation, metric choice, handlebody presentation, decomposition language, or Ricci-flow stage labels from carrying endpoint force as skin.
+\end{enumerate}
+\end{definition}
+
+\begin{proposition}[Sphere-bridge object is non-circular]\label{prop:bridge-object-noncircular}
+The bridge object \(\BridgeObjPC(M)\) does not contain \(\SphereRead(M)\) by definition. It fixes the same-manifold, carrier, standing, readout-slot, category, UEAP, and ATS constraints under which bridge completion may be reported. Sphere-readout appears only when the bridge is completed or when all endpoint-resolving negative occupations are excluded.
+\end{proposition}
+\begin{proof}
+If \(\BridgeObjPC(M)\) contained \(\SphereRead(M)\), the Poincare endpoint would be definitional at the bridge-object layer. The clauses of \(\BridgeObjPC(M)\) instead fix the admissible route conditions: same carrier, same standing packet, same readout slot, category discipline, report preservation, and anchor/tensor/skin separation. None of these clauses asserts \(M\Homeo\Sthree\). Completion is a later theorem-bearing bridge status, not part of the object definition.
+\end{proof}
+
+\begin{definition}[Bridge-complete sphere object]
+\(\BridgeObjCompPC(M)\) means that \(\BridgeObjPC(M)\) is discharged by theorem-bearing same-carrier bridge completion and therefore reports \(\SphereRead(M)\) on the fixed carrier.
+\end{definition}
+
+\begin{theorem}[Bridge-complete sphere object yields sphere-readout]\label{thm:bridge-complete-sphere-readout}
+\[
+\BridgeObjCompPC(M)\Rightarrow \SphereRead(M).
+\]
+\end{theorem}
+\begin{proof}
+Bridge-complete status is, by definition, completion of the standing-to-readout bridge on the same fixed carrier. Its output is precisely sphere-readout for \(M\).
+\end{proof}
+
+\begin{theorem}[Fixed-carrier bridge failure is sphere-bridge image exclusion]\label{thm:fixed-bridge-failure-exclusion}
+Under fixed standing,
+\[
+\StandPC(M)\wedge\neg\SphereRead(M)\Rightarrow \SphereBridgeImgExcl(M).
+\]
+\end{theorem}
+\begin{proof}
+By the definition of sphere-bridge image exclusion below, sphere-bridge image exclusion is fixed standing together with denial of the sphere-readout slot. Thus fixed-standing non-spherehood is exactly bridge-image exclusion. This theorem makes the local projection explicit; it adds no endpoint-governance conclusion.
+\end{proof}
+
 \begin{definition}[Sphere-bridge admissibility]
 \(B^{\mathrm{adm}}_{PC}(M)\) holds when a proposed transition preserves the same \(M\), the same homeomorphism relation, the same standing packet, and the same readout slot, while excluding surrogate substitution, carrier transfer, post-selection repair, selector import, and second-classifier governance.
 \end{definition}
@@ -600,10 +674,10 @@ For a fixed carrier \(M\), \(\BridgeSlotPC(M)\) is the declared transition posit
 \end{definition}
 
 \begin{proposition}[Non-circular bridge packet]\label{prop:bridge-noncircular}
-The bridge slot and admissibility layer do not contain spherehood by definition. Spherehood appears only when bridge completion is forced by exclusion of all endpoint-resolving negative occupation.
+The bridge slot, bridge object, and admissibility layer do not contain spherehood by definition. Spherehood appears only when bridge completion is certified or when endpoint-resolving negative occupation is excluded.
 \end{proposition}
 \begin{proof}
-If the slot contained \(\SphereRead(M)\), Poincare would be definitional. If admissibility contained \(M\Homeo\Sthree\), no incomplete bridge route could be audited. The slot fixes the transition type; admissibility fixes same-carrier discipline; completion is the endpoint result.
+If the slot or \(\BridgeObjPC(M)\) contained \(\SphereRead(M)\), Poincare would be definitional. If admissibility contained \(M\Homeo\Sthree\), no incomplete bridge route could be audited. The slot fixes the transition type, the bridge object fixes preservation and report discipline, admissibility fixes same-carrier discipline, and completion is the endpoint result.
 \end{proof}
 
 \begin{definition}[Sphere-bridge image exclusion]
@@ -827,17 +901,117 @@ For every \(M\),
 Assume official pointwise endpoint use and the native negative branch for \(M\). Proposition \ref{prop:endpoint-use-carrier} gives carrier instantiation, and Theorem \ref{thm:endpoint-use-kernel} gives \(\KPC(M)\). Theorem \ref{thm:pcneg-official-negative} gives official negative resolution. Theorem \ref{thm:official-negative-governance} gives endpoint-status governance, and Theorem \ref{thm:governance-independent-disc} gives independent sphere discrimination. This contradicts Theorem \ref{thm:no-independent-sphere-disc}. Hence \(\neg\PCNeg(M)\).
 \end{proof}
 
-\section{Endpoint Closure}\label{sec:main}
 
+\section{Local Reductio Engine and Sphere-Readout Closeout}\label{sec:local-reductio}
 
-\begin{theorem}[Native Poincare negative branch excluded]\label{thm:native-negative-excluded}
-On the fixed official endpoint target, the native negative branch is excluded:
+The global negative-resolution route in the previous sections remains the route audit for official endpoint-defeating use. The endpoint closeout below uses the local exact-complement route: the temporary assumption \([\neg\SphereRead(M)]_i\) is opened only as the live countercase against sphere-readout and is not promoted to a global negative endpoint result.
+
+\begin{definition}[Exact-complement non-spherehood annotation]
+The symbol
 \[
-\PCEndpoint\wedge\StandPC(M)\Rightarrow \neg\PCNeg(M).
+\ReductioCountercasePC(\neg\SphereRead(M);\SphereRead(M))
+\]
+denotes the proof-act annotation generated when the sole local assumption \([\neg\SphereRead(M)]_i\) is opened as the live exact-complement countercase against \(\SphereRead(M)\) under fixed \(\StandPC(M)\). In native notation, this is \([M\not\Homeo\Sthree]_i\). The annotation records proof role only; it is not an additional object-level premise.
+\end{definition}
+
+\begin{theorem}[Annotation is not a premise]\label{thm:pc-annotation-not-premise}
+The exact-complement annotation does not add a second conjunct to the discharged assumption. The only object-level assumption opened and later discharged is \(\neg\SphereRead(M)\); the annotation records only that this assumption is being used as the live countercase against \(\SphereRead(M)\).
+\end{theorem}
+\begin{proof}
+A proof-act annotation records why an assumption is being used in a subproof. It does not add a second proposition to the assumption list. The local subproof opens only \(\neg\SphereRead(M)\); the annotation records that this assumption is the exact complement of the target in the fixed pointwise endpoint proof.
+\end{proof}
+
+\begin{definition}[Local Poincare countercase]
+\(\LocalCountercasePC(M)\) means that the assumption \([\neg\SphereRead(M)]_i\) is the live exact-complement countercase against \(\SphereRead(M)\) under fixed \(\StandPC(M)\).
+\end{definition}
+
+\begin{theorem}[Exact-complement non-spherehood has local countercase standing]\label{thm:local-countercase-standing}
+Under \(\PCCarrierInst(M)\), \(\StandPC(M)\), and the exact-complement annotation, the local assumption \([\neg\SphereRead(M)]_i\) has local countercase standing: \(\LocalCountercasePC(M)\).
+\end{theorem}
+\begin{proof}
+The fixed pointwise endpoint has one readout slot, \(\SphereRead(M)\). Its exact complement in the local proof is \(\neg\SphereRead(M)\). Opening that complement as the branch whose survival would block endpoint closure gives it temporary local countercase standing. This is not global theoremhood of the negative branch and not official negative endpoint resolution.
+\end{proof}
+
+\begin{definition}[Local endpoint counterforce]
+The predicate \(\EndpointCounterforcePC(M)\) records that the live local countercase blocks the sphere-readout target on the fixed carrier.
+\end{definition}
+
+\begin{theorem}[Local countercase has endpoint counterforce]\label{thm:local-counterforce}
+\[
+\LocalCountercasePC(M)\Rightarrow \EndpointCounterforcePC(M).
 \]
 \end{theorem}
 \begin{proof}
-Assume \(\PCEndpoint\) and \(\StandPC(M)\). By Theorem \ref{thm:universal-binds-pointwise}, the pointwise carrier is under \(\OfficialPCEndpointUse(M)\) and \(\PCCarrierInst(M)\). Corollary \ref{cor:pcneg-excluded} then yields \(\neg\PCNeg(M)\).
+A live exact-complement countercase is introduced precisely to test whether the target can be blocked. That endpoint-facing role is endpoint counterforce inside the subproof. The conclusion is local and does not assert global official negative endpoint resolution.
+\end{proof}
+
+\begin{definition}[Local sphere-bridge image exclusion]
+\(\SphereBridgeImgExclLoc(M)\) means that sphere-bridge image exclusion is used inside the exact-complement reductio subproof as the endpoint-defeating negative branch on the fixed Poincare carrier.
+\end{definition}
+
+\begin{theorem}[Local countercase projects to local bridge-image exclusion]\label{thm:local-countercase-bridge-exclusion}
+\[
+\StandPC(M)\wedge \neg\SphereRead(M)\wedge \EndpointCounterforcePC(M)
+\Rightarrow \SphereBridgeImgExclLoc(M).
+\]
+\end{theorem}
+\begin{proof}
+Under fixed standing, \(\neg\SphereRead(M)\) is exactly failure of common occupation of the standing-to-readout bridge image. Endpoint counterforce says this bridge-image exclusion is being used as the local branch whose survival would block endpoint closure. That is precisely local sphere-bridge image exclusion.
+\end{proof}
+
+\begin{theorem}[Local bridge-image exclusion induces independent sphere discrimination]\label{thm:local-bridge-exclusion-independent}
+\[
+\SphereBridgeImgExclLoc(M)\Rightarrow \IndependentSphereDisc(M).
+\]
+\end{theorem}
+\begin{proof}
+Local bridge-image exclusion is endpoint-facing, fixed-carrier, non-bridge-complete sphere-status work. It is not carrier standing alone, not sphere-readout, not bridge completion, not proof support only, not bookkeeping, and not carrier shift. By the same role exhaustion used in Theorem \ref{thm:governance-independent-disc}, the remaining same-domain endpoint-status role is independent sphere discrimination.
+\end{proof}
+
+\begin{theorem}[Local no-independent closure]\label{thm:local-no-independent}
+\[
+\KPC(M)\Rightarrow \neg\IndependentSphereDisc(M).
+\]
+\end{theorem}
+\begin{proof}
+This is Theorem \ref{thm:no-independent-sphere-disc} applied to the fixed pointwise carrier. The no-independent closure does not distinguish global official resolution from local endpoint-facing countercase use when the same carrier, standing packet, readout slot, and endpoint role are preserved.
+\end{proof}
+
+\begin{corollary}[Local non-spherehood countercase contradiction]\label{cor:local-countercase-contradiction}
+Under \(\KPC(M)\), \(\PCCarrierInst(M)\), and \(\StandPC(M)\), the local assumption \([\neg\SphereRead(M)]_i\) yields contradiction.
+\end{corollary}
+\begin{proof}
+Open \([\neg\SphereRead(M)]_i\) as the exact-complement countercase against \(\SphereRead(M)\). The annotation gives \(\LocalCountercasePC(M)\) by Theorem \ref{thm:local-countercase-standing}. Theorem \ref{thm:local-counterforce} gives endpoint counterforce, and Theorem \ref{thm:local-countercase-bridge-exclusion} gives \(\SphereBridgeImgExclLoc(M)\). Theorem \ref{thm:local-bridge-exclusion-independent} gives \(\IndependentSphereDisc(M)\), while Theorem \ref{thm:local-no-independent} gives its negation. Contradiction follows.
+\end{proof}
+
+\begin{theorem}[Annotation discharge yields sphere-readout]\label{thm:annotation-discharge-sphere-readout}
+If the annotated exact-complement subproof from \([\neg\SphereRead(M)]_i\) yields contradiction, then the discharged result is \(\SphereRead(M)\).
+\end{theorem}
+\begin{proof}
+By Theorem \ref{thm:pc-annotation-not-premise}, the annotation is not an added object-level premise. The sole discharged object-level assumption is \(\neg\SphereRead(M)\). Classical reductio gives \(\neg\neg\SphereRead(M)\), hence \(\SphereRead(M)\).
+\end{proof}
+
+
+\section{Endpoint Closure}\label{sec:main}
+
+\begin{theorem}[Local sphere-readout closeout]\label{thm:local-sphere-readout-closeout}
+On the fixed official endpoint target,
+\[
+\PCEndpoint\wedge\StandPC(M)\Rightarrow \SphereRead(M).
+\]
+\end{theorem}
+\begin{proof}
+Assume \(\PCEndpoint\) and \(\StandPC(M)\). By Theorem \ref{thm:universal-binds-pointwise}, the pointwise carrier is under \(\OfficialPCEndpointUse(M)\) and \(\PCCarrierInst(M)\). Theorem \ref{thm:endpoint-use-kernel} gives \(\KPC(M)\). Open the exact-complement assumption \([\neg\SphereRead(M)]_i\). Corollary \ref{cor:local-countercase-contradiction} gives contradiction in the annotated subproof. Theorem \ref{thm:annotation-discharge-sphere-readout} discharges the sole object-level assumption and yields \(\SphereRead(M)\).
+\end{proof}
+
+\begin{corollary}[Global negative-branch exclusion remains available]\label{cor:global-negative-branch-exclusion}
+The global route audit still excludes the native negative branch:
+\[
+\PCEndpoint\wedge\StandPC(M)\Rightarrow \neg\PCNeg(M).
+\]
+\end{corollary}
+\begin{proof}
+Assume \(\PCEndpoint\) and \(\StandPC(M)\). Theorem \ref{thm:local-sphere-readout-closeout} gives \(\SphereRead(M)\). Since \(\PCNeg(M)\) is \(\StandPC(M)\wedge\neg\SphereRead(M)\), \(\PCNeg(M)\) is impossible. This corollary records the global negative-branch audit; the endpoint closeout above uses local exact-complement discharge.
 \end{proof}
 
 \begin{theorem}[AASC Poincare closure theorem]\label{thm:aasc-poincare}
@@ -847,7 +1021,7 @@ In AASC endpoint mode, target fixation plus the fixed standing packet force sphe
 \]
 \end{theorem}
 \begin{proof}
-Assume \(\PCEndpoint\) and let \(M\) be closed, connected, three-dimensional, and simply connected. Then \(\StandPC(M)\) holds. Suppose for contradiction that \(M\not\Homeo\Sthree\). Then \(\PCNeg(M)\) by definition. Theorem \ref{thm:native-negative-excluded} gives \(\neg\PCNeg(M)\). Contradiction. Therefore \(M\Homeo\Sthree\). The antecedent \(\PCEndpoint\) is the theorem-target fixation of this manuscript, not an assumption of \(\SphereRead(M)\).
+Assume \(\PCEndpoint\) and let \(M\) be closed, connected, three-dimensional, and simply connected. Then \(\StandPC(M)\) holds. Theorem \ref{thm:local-sphere-readout-closeout} gives \(\SphereRead(M)\). By definition of sphere-readout, \(M\Homeo\Sthree\). The antecedent \(\PCEndpoint\) is the theorem-target fixation of this manuscript, not an assumption of \(\SphereRead(M)\).
 \end{proof}
 
 \begin{corollary}[Smooth category form]
@@ -1098,6 +1272,8 @@ A right-mode objection must target a named theorem link:
 \item Endpoint governance as independent sphere discrimination.
 \item No independent same-domain Poincare sphere discriminator.
 \item Exclusion of \(\PCNeg(M)\).
+\item Sphere-bridge object \(\BridgeObjPC(M)\), including non-circularity and bridge-complete readout.
+\item Local exact-complement annotation and discharge for \([\neg\SphereRead(M)]_i\).
 \item Final official endpoint correspondence.
 \item Lean-to-manuscript correspondence only where Lean is explicitly cited as audit support. A challenge here must identify a mismatch between the Lean-support artifact and the manuscript theorem chain; it is not enough to argue that Lean is not itself the proof.
 \end{enumerate}
@@ -1123,6 +1299,11 @@ No fifth case & Inhabit a fifth same-carrier endpoint-resolving negative occupat
 Independent discriminator & Show endpoint-resolving negative governance is bridge completion, proof support, carrier shift, bookkeeping, or not second endpoint authority.\\
 No independent discriminator & Show independent same-domain sphere-status governance is not excluded by the kernel.\\
 Strict kernel weakening & Show that a strict weakening of K5, K6, K11, or K13 preserves non-degenerate same-carrier endpoint use while allowing the negative endpoint governance excluded by Theorem \ref{thm:no-strict-weakening}.\\
+Sphere-bridge object & Show that a clause of \(\BridgeObjPC(M)\) smuggles \(\SphereRead(M)\), changes carrier, or fails to preserve the official Poincare endpoint interface.\\
+Bridge-complete readout & Produce a completed sphere-bridge object that does not imply \(M\Homeo\Sthree\).\\
+Local reductio annotation & Prove that the exact-complement annotation is an added object-level premise rather than proof-act metadata.\\
+Local countercase projection & Produce fixed-standing non-spherehood that blocks sphere-readout while not projecting to local sphere-bridge image exclusion.\\
+Annotation discharge & Show that the local contradiction discharges only a strengthened premise rather than \([\neg\SphereRead(M)]_i\).\\
 Official correspondence & Show \(\neg\PCNeg(M)\) does not imply \(M\Homeo\Sthree\) under the fixed native normal form.\\
 \bottomrule
 \end{longtable}
@@ -1133,7 +1314,7 @@ The proof is a mathematical constraint-formalism proof in AASC. It is not a Ricc
 
 Lean 4 support, where referenced, audits formal routing and AASC kernel discipline; it does not replace the manuscript proof. The current Poincare Lean audit archive records the endpoint-spine support surface, and the stable paper-specific formalization scope includes the relevant AASC machinery directly, while existing corpus formalization support records the maturity of the machinery used here. A same-mode refutation must therefore break the constraint chain or the Poincare instantiation, not dismiss AASC as non-mathematical language and not demand a different proof class.
 
-The Ricci-flow comparison does not subordinate this proof to the traditional solution. It classifies the Hamilton--Perelman solution as a legitimate geometric-evolution bridge route under UEAP after the AASC endpoint has been reached. The AASC route is different: fixed endpoint use, bridge-exclusion audit, no hidden fifth case, no independent discriminator, and native negative branch exclusion.
+The Ricci-flow comparison does not subordinate this proof to the traditional solution. It classifies the Hamilton--Perelman solution as a legitimate geometric-evolution bridge route under UEAP after the AASC endpoint has been reached. The AASC route is different: fixed endpoint use, bridge-exclusion audit, no hidden fifth case, no independent discriminator, and native negative branch exclusion. The final closeout now uses local exact-complement discharge: the assumption \([\neg\SphereRead(M)]_i\) is routed through local bridge-image exclusion and contradicted, so the discharged result is sphere-readout itself rather than a strengthened endpoint-governance premise.
 
 \appendix
 
@@ -1164,6 +1345,11 @@ The Ricci-flow comparison does not subordinate this proof to the traditional sol
 16 & No independent discriminator & Excludes independent same-domain sphere-status governance.\\
 17 & Negative branch exclusion & Proves \(\neg\PCNeg(M)\).\\
 18 & Poincare closure & Concludes \(M\Homeo\Sthree\).\\
+18a & Sphere-bridge object & Fixes same-manifold, carrier, standing, readout-slot, category, UEAP, and ATS bridge discipline without containing spherehood.\\
+18b & Bridge-complete sphere object & Makes bridge-completion output \(\SphereRead(M)\) explicit.\\
+18c & Local reductio annotation & Records \([\neg\SphereRead(M)]_i\) as proof-role metadata, not an added premise.\\
+18d & Local countercase route & Sends local non-spherehood through endpoint counterforce, local bridge-image exclusion, independent discriminator, and contradiction.\\
+18e & Annotation discharge & Discharges the local assumption itself and yields sphere-readout.\\
 19 & Route-locus exhaustion & Classifies endpoint-resolving negative routes.\\
 20 & Ricci bridge audit & Places traditional solution in comparison layer only.\\
 \bottomrule
@@ -1190,6 +1376,10 @@ The full K-packet is stronger than core adequacy & The weakening-resistance sect
 A weaker formalism could allow negative governance & A weaker formalism may allow proof support, lawful coequal negative target roles, or carrier-shift diagnosis. It cannot allow same-carrier endpoint-resolving negative governance without producing second endpoint authority or third-status degeneracy.\\
 K5 bans ordinary mathematical plurality & No. K5 bans only plural endpoint-governing admissible interiors for the same fixed endpoint slot. It does not ban multiple proof routes, invariants, presentations, metrics, or support structures.\\
 K13 bans uncertainty & No. It classifies uncertainty as epistemic or report status, not endpoint truth occupation.\\
+\(\BridgeObjPC(M)\) contains spherehood & No. The bridge object fixes same-manifold, carrier, standing, readout-slot, category, UEAP, and ATS discipline. Spherehood appears only under bridge completion or negative-branch exclusion.\\
+Local reductio assumes official negative resolution & No. The local assumption \([\neg\SphereRead(M)]_i\) is opened as exact-complement countercase. It receives local endpoint counterforce, not global official negative endpoint status.\\
+Contradiction discharges a strengthened premise & No. The annotation is proof-role metadata; the only discharged object-level assumption is \(\neg\SphereRead(M)\).\\
+Non-spherehood becomes a discriminator by fiat & No. It becomes local bridge-image exclusion only after fixed standing, carrier, endpoint counterforce, and bridge-role projection are in force.\\
 Target-slot determinacy smuggles in K13 & No. Target-slot determinacy fixes what is evaluated. K13 is the separate fail-closed theorem showing that unknown, deferred, unsupported, bookkeeping, and hidden-fifth statuses cannot occupy endpoint truth.\\
 Minimal report evaluability smuggles in K11 & No. Minimal report evaluability only attaches reports to the fixed target and classifies them by role. K11 is the separate no-overreporting theorem that endpoint force may not exceed carrier, bridge, and tensor support.\\
 \bottomrule
@@ -1247,6 +1437,8 @@ Final correspondence & Show \(\neg\PCNeg(M)\) fails to yield \(M\Homeo\Sthree\).
 
 \begin{mdframed}[backgroundcolor=gray!8,linewidth=0.6pt]
 \textbf{Support boundary.} The proof of this manuscript is the mathematical theorem chain above. The Lean 4 layer is support/audit material for the proof-spine routing and AASC kernel discipline; it is not substituted for the proof text. The public Poincare Lean audit archive records the manuscript-facing endpoint route, the reusable AASC foundation layer, focused axiom checks, the pre-Lean manuscript signature map, and the manuscript-facing PDF/source snapshot \cite{PoincareLeanAuditGithub2026}. The Zenodo DOI record supplies a citable archival pointer for the same Lean audit layer \cite{PoincareLeanAuditZenodo2026}. The stable paper-specific formalization scope includes the relevant AASC machinery directly: kernel discipline, below-kernel underivability posture, endpoint routing, no-hidden-fifth closure, and no-independent-classifier structure.
+
+The explicit sphere-bridge object and local exact-complement reductio annotation introduced in this release are manuscript-level defensive refinements of the already represented endpoint route. They do not add a new first-principles topology or Ricci-flow formalization burden; they clarify the same carrier-preserving bridge role and the local assumption-discharge discipline used by the manuscript closeout.
 \end{mdframed}
 
 \subsection*{Public audit record}
@@ -1327,6 +1519,16 @@ OfficialPCEndpointUse(M)
   -> SphereRead(M)
   -> OfficialPCEndpoint
 \end{verbatim}
+The local closeout refinement has the parallel proof-role shape
+\begin{verbatim}
+[not SphereRead(M)]_i
+  -> LocalCountercasePC(M)
+  -> EndpointCounterforcePC(M)
+  -> LocalSphereBridgeImageExclusion(M)
+  -> IndependentSphereDiscPC(M)
+  -> contradiction
+  -> SphereRead(M)
+\end{verbatim}
 This is the Lean-facing counterpart of the manuscript proof spine. The handoff also records that Ricci-flow material is represented only by named comparison-boundary objects and is not active proof machinery \cite{PoincareLeanAuditHandoff2026}.
 
 \subsection*{Principal Lean anchors}
@@ -1349,7 +1551,7 @@ Independent discriminator closure & \begin{tabular}[t]{@{}l@{}}\texttt{pcNeg\_in
 Endpoint closeout & \begin{tabular}[t]{@{}l@{}}\texttt{sphereRead\_forced}\\\texttt{officialPCEndpoint\_of\_aascContext}\\\texttt{pcEndpointAASCContext\_closes\_endpoint}\end{tabular}\\[-0.2em]
 & These anchors record forced pointwise sphere-readout and the official Poincare endpoint closeout.\\
 Ricci-flow comparison boundary & \begin{tabular}[t]{@{}l@{}}\texttt{ricciBridgeAudit\_context\_iff}\\\texttt{pcRicciBridge\_remains\_comparisonOnly}\end{tabular}\\[-0.2em]
-& These anchors record that the Hamilton--Perelman/Ricci-flow route remains comparison-only.\\
+& These anchors record the Ricci-flow comparison boundary.\\
 \bottomrule
 \end{longtable}
 
@@ -1385,6 +1587,11 @@ EndpointAdeqPC M
 KPC M
 AASCMathematicalStatus
 LeanSupportBoundary
+PCSphereBridgeObject M
+PCSphereBridgeObjectComplete M
+PCLocalReductioCountercase M
+PCLocalNegativeCountercase M
+PCLocalSphereBridgeImageExclusion M
 PCNeg M
 StdPCNeg M
 BridgeSlotPC M

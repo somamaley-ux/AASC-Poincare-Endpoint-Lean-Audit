@@ -22,4 +22,4 @@ The proof does not rely on direct truth-to-admissibility collapse. It relies on 
 
 ## Lean boundary
 
-Lean-facing material is support/audit material for the AASC endpoint route. The standalone archive includes the relevant reusable AASC foundation layer and the Poincare-specific Lean spine connecting native negative occupation to sphere-bridge image exclusion, endpoint-status governance, independent same-domain sphere discrimination, and contradiction under AASC no-independent-classifier closure. It remains bounded away from a first-principles formalization of Ricci flow, surgery, or 3-manifold topology.
+Lean-facing material is support/audit material only. The current public Poincare Lean audit archive records the endpoint-spine support surface, and the stable manuscript formalization scope includes the relevant AASC machinery directly.

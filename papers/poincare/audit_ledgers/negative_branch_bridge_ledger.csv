@@ -10,3 +10,7 @@ Governance,EndpointGov_PC(M),Classifies official negative use as endpoint-status
 Independent discriminator,IndependentSphereDisc_PC(M),Endpoint governance that is not positive bridge completion,Show it is proof support carrier shift bookkeeping or bridge completion
 Exclusion,not IndependentSphereDisc_PC(M),No second same-domain endpoint authority under K_PC,Show independent endpoint authority compatible with K_PC
 Closure,not PCNeg(M),Native negative branch excluded,Show contradiction chain has a broken link
+Bridge object,B^PC(M),Fixes same-manifold carrier standing readout category UEAP and ATS bridge discipline without asserting SphereRead(M),Show a clause smuggles spherehood or shifts carrier
+Local countercase,[not SphereRead(M)]_i,Temporary exact-complement countercase against sphere-readout,Show the assumption is promoted to global official negative resolution
+Local bridge exclusion,SphereBridgeImgExcl^loc_PC(M),Endpoint-facing local use of bridge-image exclusion in the reductio subproof,Show fixed-standing non-spherehood does not project to local bridge exclusion
+Annotation discharge,SphereRead(M),Discharges the sole local non-spherehood assumption after contradiction,Show the contradiction discharges a strengthened premise instead

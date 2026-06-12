@@ -109,3 +109,9 @@ not claimed here as a full first-principles formalization of the surrounding
 classical subject.  The repo therefore should be read as a manuscript-faithful
 AASC endpoint mechanization, with explicit carrier-adequacy boundaries, rather
 than as a rebuilt-from-foundations formalization of the entire classical field.
+
+## Hardened Clay Endpoint Sync
+
+This repository has been synchronized with the hardened Clay endpoint package dated 2026-06-12/2026-06-13. The manuscript-facing snapshot is now in $(System.Collections.Hashtable.dest -replace '\','/') and includes the supplied hardening notes, audit ledgers, verification notes, theorem-ladder or route-locus materials where present, and publication-facing package metadata.
+
+The Lean archive remains the audit surface for the endpoint proof spine; the hardened manuscript package is the reader-facing source snapshot paired with that audit surface.
